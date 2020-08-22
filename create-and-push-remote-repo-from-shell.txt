@@ -41,7 +41,7 @@ Create Remote Repo
 
 ----------------------------
 Add origin
-$ git remote add origin https://github.com/ajinzrathod/terminal.git
+$ git remote add origin https://github.com/ajinzrathod/<repo name>.git
 
 ----------------------------
 Push
