@@ -5,7 +5,7 @@ $ git init
 
 ----------------------------
 Create "README" file
-$ echo "# Git From Comman Line" >> README.md
+$ echo "# Git From Command Line" >> README.md
 
 ----------------------------
 Create ".gitignore" file
