@@ -1,2 +1,2 @@
 # Git From Command Line
-## github.com/@ajinzrathod
+## github.com/ajinzrathod
