@@ -1,0 +1,58 @@
+Initialize empty Git repository in present directory
+$ git init
+
+.   Initialized empty Git repository in /path/to/project/.git/
+
+----------------------------
+Create "README" file
+$ echo "# Git From Comman Line" >> README.md
+
+----------------------------
+Create ".gitignore" file
+$ touch .gitignore
+
+----------------------------
+Add Files
+    - Add Specific Files
+    $ git add README.md .gitignore
+
+    - Add All Files
+    $ git add -A
+
+----------------------------
+Commit
+$ git commit -m "Commit Title"
+
+.   [master (root-commit) e0f3ad9] Commit Title
+.    2 files changed, 2 insertions(+)
+.    create mode 100644 .gitignore
+.    create mode 100644 README.md
+
+----------------------------
+Create Remote Repo
+    - Public Repo
+    $ curl -u <username> https://api.github.com/user/repos -d '{"name": "<repo name>"}'
+
+    - Private Repo
+    $ curl -u <username> https://api.github.com/user/repos -d '{"name": "<repo name>", "private": true}'
+
+    - Password On The Fly
+    $ curl -u "<username>:<password>" https://api.github.com/user/repos -d '{"name": "<repo name>", "private": false}'
+
+----------------------------
+Add origin
+$ git remote add origin https://github.com/ajinzrathod/terminal.git
+
+----------------------------
+Push
+git push origin master
+
+.   Username for 'https://github.com': <username>
+.   Password for 'https://ajinzrathod@github.com': <enter password> 
+.   Counting objects: 4, done.
+.   Delta compression using up to 8 threads.
+.   Compressing objects: 100% (2/2), done.
+.   Writing objects: 100% (4/4), 295 bytes | 295.00 KiB/s, done.
+.   Total 4 (delta 0), reused 0 (delta 0)
+.   To https://github.com/ajinzrathod/<repo name>.git
+.    * [new branch]      master -> master
